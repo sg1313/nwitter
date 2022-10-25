@@ -16,7 +16,7 @@ const NweetFactory = ({ userObj }) => {
       return;
     }
     e.preventDefault();
-    let attachmentURL = ""; // 사진이 없다면 첨부파일주소는 빈 값. 사진 첨부하면 storage에서 다운받은 URL로 업데이트,,
+    let attachmentURL = ""; // 사진이 없다면 첨부파일주소는 빈 값. 사진 첨부하면 storage에서 다운받은 URL로 업데이트
     if (attachment !== "") {
       // 사진 첨부했을 때
       const attachmentRef = ref(storageService, `${userObj.uid}/${uuidv4()}`); //  파일 경로 참조 만들기
